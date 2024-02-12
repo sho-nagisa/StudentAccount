@@ -2,7 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row row-cols-auto border-bottom">
+    <div class="col-7">
+        <h1>Todoリスト</h1>
+    </div>
+    <div class="col">
+        <a class="btn btn-outline-warning" asp-controller="Home" asp-action="addTask">タスク追加</a>
+    </div>
+    <div class="col">
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-outline-primary">表示チーム選択</button>
+    </div>
+    <div class="col-2">
+        <a class="btn btn-outline-primary" asp-controller="Template" asp-action="TemplateAdd">テンプレート作成</a>
+    </div>
 </div>
